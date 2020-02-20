@@ -1,4 +1,4 @@
-const sqlite3 = require('sqlite3').verbose();
+const sqlite3 = require('sqlite3').verbose(); // создаем базу данных с несколькими колонками и устанаавливаем соединение
 const DBSOURCE = "db.sqlite";
 
 const db = new sqlite3.Database(DBSOURCE, (err) => {
