@@ -53,7 +53,7 @@ router.post("/api/article/", (req, res, next) => {
     const data = {
         title: req.body.title,
         body: req.body.body,
-        date: req.body.date
+        date: req.body.date  // date : new Date()   
     };
     const sql ='INSERT INTO article (title, body, date) VALUES (?,?,?)';
     const params =[data.title, data.body, data.date];
