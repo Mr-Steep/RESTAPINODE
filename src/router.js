@@ -1,7 +1,9 @@
-const express = require('express');
-const db = require("./database.js");
+const express = require('express'); //подключаем express
+const db = require("./database.js");// бд
 
-const router = express.Router();
+const router = express.Router(); // метод HTTP и присоединяемся  к экземпляру класса express.
+// Создаем Роуты
+
 //получить все статьи
 router.get("/api/articles", (req, res, next) => {
     const sql = "select * from article";
